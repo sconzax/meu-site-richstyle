@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="apple.png">
+</head>
+<body>
+    <!-- Video de Fundo -->
+    <video autoplay muted loop>
+        <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container">
+        <!-- Tela de entrada -->
+        <div class="entry-screen" id="entryScreen">
+            <div class="entry-content">
+                <h1 class="enter-text" id="enterText">richstyle</h1>
+            </div>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content" id="mainContent">
+            <!-- Music Button -->
+            <div class="music-button" id="musicButton">
+                <i class="fas fa-volume-up" id="musicIcon"></i>
+            </div>
+            
+
+
+            <!-- Seção Hero com múltiplos perfis -->
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="profiles-container">
+                        <!-- Perfil 1 -->
+                        <div class="profile-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img id="ocean-avatar" src="https://media.discordapp.net/attachments/1213609564986146896/1380624852024688710/male_rpg_icons_jasmin.jpeg?ex=686a2157&is=6868cfd7&hm=96d32a5db0f87fb44f2b4369391eb91ec3249742f678189b41b109d5a98156b7&=&format=webp" alt="Ocean Avatar" class="profile-avatar">
+                            <h2 class="profile-title">ocean</h2>
+                            <div id="ocean-username" class="profile-username">7cean</div>
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:18px;height:18px;filter:invert(1);margin-bottom:0.5rem;" />
+                        </div>
+                        
+                        <!-- Perfil 2 -->
+                        <div class="profile-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img id="jottape-avatar" src="https://media.discordapp.net/attachments/1213609564986146896/1368013495462793358/IMG_4837.jpg?ex=686a6499&is=68691319&hm=ae580bfd4419e45b155b2b06a752051d0ba50da6845dbc97bb7f0973a76babaa&=&format=webp&width=685&height=856" alt="Avatar 2" class="profile-avatar">
+                            <h2 class="profile-title">jottape</h2>
+                            <div id="jottape-username" class="profile-username">unicochef</div>
+                            <a href="https://www.instagram.com/jottape33_" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:18px;height:18px;filter:invert(1);margin-bottom:0.5rem;" />
+                            </a>
+                        </div>
+                        
+                        <!-- Perfil 3 -->
+                        <div class="profile-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img id="buxazz-avatar" src="https://cdn.discordapp.com/attachments/1213609564986146896/1387822271082663957/IMG_1900.jpg?ex=6869f275&is=6868a0f5&hm=8e7820867987371bf14ce6ba8986a8fc9d6c3ec4783db12e3f540492ed70e77e&" alt="Avatar 3" class="profile-avatar">
+                            <h2 class="profile-title">buxazz</h2>
+                            <div id="buxazz-username" class="profile-username">raph1nha</div>
+                            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:18px;height:18px;filter:invert(1);margin-bottom:0.5rem;" />
+                        </div>
+                        
+                        <!-- Perfil 4 -->
+                        <div class="profile-card" data-tilt data-tilt-max="10" data-tilt-scale="1.05" data-tilt-speed="400" data-tilt-perspective="1000">
+                            <img id="honravam-avatar" src="https://media.discordapp.net/attachments/1389385262462668810/1391184100513157221/zneijder..png?ex=686af8a8&is=6869a728&hm=54a702bd8b1006de20269009739141a1c9761518a25c0974dd9a93cf18ab0600&=&format=webp&quality=lossless" alt="Avatar 4" class="profile-avatar">
+                            <h2 class="profile-title">⛧</h2>
+                            <div id="honravam-username" class="profile-username">honravam</div>
+                            <a href="https://www.instagram.com/gui0fz/?source=omni_redirect" target="_blank" rel="noopener noreferrer">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:18px;height:18px;filter:invert(1);margin-bottom:0.5rem;" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Hidden YouTube Player -->
+    <iframe 
+        id="youtube-player"
+        style="display: none;"
+        src="https://www.youtube.com/embed/DCPBUaVx7gk?enablejsapi=1&autoplay=0&controls=0&rel=0&showinfo=0&loop=1&playlist=DCPBUaVx7gk" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+
+</body>
+</html> 
